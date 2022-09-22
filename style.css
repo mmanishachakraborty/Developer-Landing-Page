@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "roboto", sans-serif;
+}
+.Firstsection{
+    background-image: url(IMAGES/IMAGE1.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.textcontainer{
+    color:white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-left: 120px;
+}
+.largetext{
+    font-size: 60px;
+    font-weight: 500;
+    
+}
+.secondsection{
+    background-color: black;
+    padding: 20px;
+}
+.secondsection h2{
+    font-weight: 300;
+    color:white;
+    font-size: 72px;
+    text-align: center;
+}
+.secondsection  h2 span{
+    font-weight: 400;
+    font-size: 96px;
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 20px;
+    max-width:1100px;
+    margin: 50px auto;
+}
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    max-width:250px ;
+    height: 360px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.3) ;
+    transition: 0.2s ease-in-out;
+}
+.image_container,
+img{
+    max-width: 240px;
+    max-height: 300px;
+    margin-top: 10px;
+    margin-bottom:5px;
+    margin-left:3px ;
+}
+.card_container{
+    padding: 10px;
+}
+.card_container{
+    margin-bottom: 15px;
+}
+.card:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.4) ;
+    transition: 0.2s ease-in-out;
+}
+.thirdsection{
+    display: flex;
+}
+.contact{
+    background-color: green;
+}
+.about{
+    background-color: brown;
+}
+.contact,.about{
+    min-height: 300px;
+    padding: 32px;
+    color: aliceblue;
+}
+.contact p,.about p{
+    margin-bottom:20px;
+}
+.contact h2,.about h2{
+    font-size:50px;
+    font-weight: 300;
+}
+footer{
+    text-align: center;
+    background-color:aqua;
+    padding: 20px;
+}
+@media(max-width:786px){
+    .Firstsection{
+        min-height: 50vh;
+    }
+    .textcontainer{
+        padding: 10px 0;
+        text-align: center;
+    }
+    .largetext{
+        font-size: 32px;
+    }
+    .secondsection h2{
+       font-size:24px ;
+    }
+    .secondsection h2 span{
+        font-weight: 400;
+        font-size: 32px;
+    }
+    .thirdsection{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size:32px ;
+
+    }
+    .contact h2,.about h2{
+        font-size:32px;
+    }
+}
